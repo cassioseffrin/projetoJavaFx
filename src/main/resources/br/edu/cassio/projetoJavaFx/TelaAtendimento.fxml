@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.cassio.projetoJavaFx.ControllerTelaCliente">
+   <children>
+      <Label layoutX="222.0" layoutY="6.0" prefHeight="17.0" prefWidth="151.0" text="Tela de Atendimento" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" underline="true" />
+      <Button fx:id="buttonSalvar" layoutX="425.0" layoutY="270.0" mnemonicParsing="false" onAction="#handlerSalvar" prefHeight="26.0" prefWidth="99.0" text="Salvar" />
+      <TabPane layoutX="55.0" layoutY="46.0" prefHeight="200.0" prefWidth="417.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Cliente">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox layoutX="95.0" layoutY="39.0" prefWidth="150.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Dados do servico">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
