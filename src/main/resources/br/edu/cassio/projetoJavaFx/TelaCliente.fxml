@@ -19,8 +19,8 @@
           <TableColumn fx:id="tableColumnNome" prefWidth="122.0" text="Nome" />
             <TableColumn fx:id="tableColumnRg" prefWidth="76.0" text="RG" />
             <TableColumn fx:id="tableColumnCpf" prefWidth="72.0" text="CPF" />
-            <TableColumn fx:id="tableColumnSexo" prefWidth="66.0" text="Sexo" />
-            <TableColumn fx:id="tableColumnNascimento" prefWidth="99.0" text="Nascimento" />
+           <!--  <TableColumn fx:id="tableColumnSexo" prefWidth="66.0" text="Sexo" /> -->
+           <!--  <TableColumn fx:id="tableColumnNascimento" prefWidth="99.0" text="Nascimento" /> -->
             <TableColumn fx:id="tableColumnTelefone" prefWidth="64.0" text="Telefone" />
         </columns>
       </TableView>

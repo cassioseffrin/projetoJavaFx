@@ -20,7 +20,7 @@ public class MysqlSingleton  {
 	public static Connection conectar() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			singletonConnection = DriverManager.getConnection("jdbc:mysql://192.168.0.102:3306/farmacia", "root", "123123123");
+			singletonConnection = DriverManager.getConnection("jdbc:mysql://192.168.0.108:3306/farmacia", "root", "123123123");
  	return singletonConnection;
 		} catch (SQLException | ClassNotFoundException e) {
 			return null;

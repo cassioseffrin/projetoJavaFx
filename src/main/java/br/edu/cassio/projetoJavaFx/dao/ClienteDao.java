@@ -49,6 +49,7 @@ public class ClienteDao {
 			while (resultado.next()) {
 				Cliente cliente = new Cliente();
 				cliente.setNome(resultado.getString("nome"));
+				cliente.setId(resultado.getInt("id"));
 				cliente.setRg(resultado.getString("rg"));
 				cliente.setCpf(resultado.getString("cpf"));
 				cliente.setEndereco(resultado.getString("endereco"));
