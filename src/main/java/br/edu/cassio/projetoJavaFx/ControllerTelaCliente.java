@@ -76,8 +76,8 @@ public class ControllerTelaCliente implements Initializable {
 
 	@FXML
 	private Button buttonExcluir;
-	private ObservableList<Cliente> olCliente;
-	private Integer idClienteSelecionado;
+	private ObservableList<Cliente> observableTable;
+ 
 	private Cliente clienteSelecionado;
 	@FXML
 	private Button buttonNovo;
@@ -131,16 +131,15 @@ public class ControllerTelaCliente implements Initializable {
 	}
 
 	public void popularTabelaCliente() {
-//    	 module-info.java
-//    	  Quando você define o groupId apenas como "projetoJavaFx" (vver  no pom.xml)
+		// fazer export das entidadades do projeto no module-info.java. ex: exports br.edu.cassio.projetoJavaFx.entidades;
 		List<Cliente> lst = clienteDao.listar();
 		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
 		tableColumnNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
 		tableColumnRg.setCellValueFactory(new PropertyValueFactory<>("rg"));
 		tableColumnCpf.setCellValueFactory(new PropertyValueFactory<>("cpf"));
 		tableColumnTelefone.setCellValueFactory(new PropertyValueFactory<>("telefone"));
-		olCliente = FXCollections.observableArrayList(lst);
-		tableViewCliente.setItems(olCliente);
+		observableTable = FXCollections.observableArrayList(lst);
+		tableViewCliente.setItems(observableTable);
 	}
 
 	private void selecionarCliente(Cliente cliente) {
@@ -156,8 +155,8 @@ public class ControllerTelaCliente implements Initializable {
 
 	@FXML
 	private void handlerExcluirCliente(ActionEvent event) {
-		if (idClienteSelecionado != null) {
-			clienteDao.remover(clienteSelecionado);
+		if (clienteSelecionado != null) {
+			clienteDao.remover(clienteSelecionado );
 			popularTabelaCliente();
 		}
 

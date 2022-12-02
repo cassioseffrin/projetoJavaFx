@@ -22,6 +22,9 @@
            <!--  <TableColumn fx:id="tableColumnSexo" prefWidth="66.0" text="Sexo" /> -->
            <!--  <TableColumn fx:id="tableColumnNascimento" prefWidth="99.0" text="Nascimento" /> -->
             <TableColumn fx:id="tableColumnTelefone" prefWidth="64.0" text="Telefone" />
+            <TableColumn fx:id="tableColumnTelefone1" prefWidth="64.0" text="Telefone" />
+            <TableColumn fx:id="tableColumnTelefone2" prefWidth="64.0" text="Telefone" />
+            <TableColumn fx:id="tableColumnTelefone3" prefWidth="64.0" text="Telefone" />
         </columns>
       </TableView>
       <TextField fx:id="textFieldId" editable="false" layoutX="38.0" layoutY="36.0" prefHeight="25.0" prefWidth="37.0" />
